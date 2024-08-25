@@ -5,6 +5,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.luizafmartinez.m28_getimagesapi.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -26,11 +28,24 @@ class MainActivity : AppCompatActivity() {
         }
 
         galeriaAdapter = GaleriaAdapter()
+        galeriaAdapter.adicionarLista(
+            listOf(
+                "https://conteudo.imguol.com.br/c/entretenimento/36/2022/05/22/gata-tricolor-gato-gatos-1653265224214_v2_900x506.jpg",
+                "https://conteudo.imguol.com.br/c/entretenimento/36/2022/05/22/gata-tricolor-gato-gatos-1653265224214_v2_900x506.jpg",
+                "https://conteudo.imguol.com.br/c/entretenimento/36/2022/05/22/gata-tricolor-gato-gatos-1653265224214_v2_900x506.jpg",
+                "https://conteudo.imguol.com.br/c/entretenimento/36/2022/05/22/gata-tricolor-gato-gatos-1653265224214_v2_900x506.jpg",
+                "https://conteudo.imguol.com.br/c/entretenimento/36/2022/05/22/gata-tricolor-gato-gatos-1653265224214_v2_900x506.jpg",
+                "https://conteudo.imguol.com.br/c/entretenimento/36/2022/05/22/gata-tricolor-gato-gatos-1653265224214_v2_900x506.jpg"
+            )
+        )
+
         binding.rvGaleria.adapter = galeriaAdapter
 
-
-
-
-
+        binding.rvGaleria.layoutManager = GridLayoutManager(
+            this,
+            3,
+            RecyclerView.VERTICAL,
+            false
+        )
     }
 }
