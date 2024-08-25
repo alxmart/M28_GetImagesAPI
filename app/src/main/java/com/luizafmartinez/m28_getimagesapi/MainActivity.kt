@@ -29,8 +29,8 @@ class MainActivity : AppCompatActivity() {
 
         galeriaAdapter = GaleriaAdapter()
 
+        /*
         galeriaAdapter.adicionarLista(
-
             listOf(
                 "https://conteudo.imguol.com.br/c/entretenimento/36/2022/05/22/gata-tricolor-gato-gatos-1653265224214_v2_900x506.jpg",
                 "https://conteudo.imguol.com.br/c/entretenimento/36/2022/05/22/gata-tricolor-gato-gatos-1653265224214_v2_900x506.jpg",
@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
                 "https://conteudo.imguol.com.br/c/entretenimento/36/2022/05/22/gata-tricolor-gato-gatos-1653265224214_v2_900x506.jpg"
             )
         )
+        */
 
         binding.rvGaleria.adapter = galeriaAdapter
 
