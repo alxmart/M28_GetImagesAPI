@@ -13,6 +13,7 @@ class GaleriaAdapter: Adapter<GaleriaAdapter.GaleriaViewHolder> () {
 
     fun adicionarLista( lista: List<String> ) {
         listaImagens = lista
+        notifyDataSetChanged()
     }
 
     inner class GaleriaViewHolder(val binding: ItemGaleriaBinding)
