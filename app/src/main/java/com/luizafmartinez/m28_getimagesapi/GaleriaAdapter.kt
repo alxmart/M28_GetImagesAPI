@@ -42,16 +42,8 @@ class GaleriaAdapter: Adapter<GaleriaAdapter.GaleriaViewHolder> () {
     }
 
     override fun onBindViewHolder(holder: GaleriaViewHolder, position: Int) {
-
         val url = listaImagens[position]
-
         holder.bind( url)
-
-
-
-
-
-
     }
 
 }

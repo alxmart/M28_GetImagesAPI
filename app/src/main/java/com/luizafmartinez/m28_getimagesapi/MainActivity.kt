@@ -95,11 +95,8 @@ class MainActivity : AppCompatActivity() {
                 val resultado = response.body()
 
                 if (resultado != null) {
-
                     val lista = resultado.data
-
                     val listaUrlImagens = mutableListOf<String>()
-
                     lista.forEach { dados ->
                         val imagem = dados.images[0]
                         val tipo = imagem.type

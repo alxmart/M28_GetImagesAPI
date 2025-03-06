@@ -13,8 +13,4 @@ interface ImgurAPI {
         @Query("q") q : String
     ) : Response< Resultado >
 
-
-
-
-
 }
